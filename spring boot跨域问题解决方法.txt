@@ -1,0 +1,66 @@
+http://www.cnblogs.com/jaxu/p/3698404.html
+加AccessControlFilter.java和WebApplicationConfig.java
+/**
+var url="http://localhost:8078/print/loadTemplatesByCatalog?id=1";
+$.ajax({
+    url: url,
+    type: 'GET',
+    contentType: "application/json",
+    processData: false,
+    //data: JSON.stringify(resultCode)
+  })
+  .done(function(data) {
+      console.log(data)
+  });
+**/
+
+/**
+var url="http://localhost:8078/print/savePrintCalog";
+var resultCode={
+	    "name": "模板分类1",
+	    "modulecode": "a1",
+	    "pk_dir": "1",
+	    "pk_parent": "a2",
+	    "creator": "a3",
+	    "creationtime": "2009-06-08 00:00:00",
+	    "modifier": "a4",
+	    "modifiedtime": "2009-06-18 00:00:00",
+	    "description": "test模板分类描述1"
+	};
+$.ajax({
+    url: url,
+    type: 'POST',
+    contentType: "application/json",
+    processData: false,
+    data: JSON.stringify(resultCode)
+  })
+  .done(function(data) {
+      console.log(data)
+  });
+**/
+
+
+/**
+var url="http://localhost:8078/print/deleteCatalogByID?id=2";
+var resultCode={
+	    "name": "模板分类1",
+	    "modulecode": "a1",
+	    "pk_dir": "1",
+	    "pk_parent": "a2",
+	    "creator": "a3",
+	    "creationtime": "2009-06-08 00:00:00",
+	    "modifier": "a4",
+	    "modifiedtime": "2009-06-18 00:00:00",
+	    "description": "test模板分类描述1"
+	};
+$.ajax({
+    url: url,
+    type: 'DELETE',
+    contentType: "application/json",
+    processData: false,
+    //data: JSON.stringify(resultCode)
+  })
+  .done(function(data) {
+      console.log(data)
+  });
+**/
